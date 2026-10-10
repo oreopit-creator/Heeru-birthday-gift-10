@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* { box-sizing: border-box; }
+html { font-size: min(4vw, 16px); }
+body {
+    background-color: #f4f1ea;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+.main-page, .gift-page, .promises-page, .special-page, .page-some-lines, .memories-page {
+    width: 22.5rem;
+    height: auto;
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    border: 2px solid #b59f8c;
+    box-shadow: 0 0 30px #b59f8c, 0 0 30px #b59f8c, 0 0 30px #b59f8c;
+}
+.heeru-heading { font-family: "Pacifico", cursive; font-size: 2.4rem; }
+.line-heading { font-family: "Pacifico", cursive; font-size: 2rem; }
+.wish-heading, .message-heading { font-family: "Pacifico", cursive; font-size: 1.5rem; }
+.telling-memo1 {
+    font-size: 2rem;
+    position: relative;
+    transform: translate(0, -3rem);
+    font-family: "Pacifico", cursive;
+}
+.telling-memo2 {
+    font-size: 2rem;
+    position: relative;
+    transform: translate(0, -4.7rem);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer p { margin: 0; }
+.credit-content { text-align: center; font-size: 1.5rem; transform: translateY(30%); }
+.credit-text { margin: 5px; position: relative; transform: translateX(20%); }
+.credit-text-p { margin: -0.6rem 0.6rem 0.6rem; position: relative; font-size: 1.2rem; }
+.gift-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0;
+}
+.gift-buttons nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+.gift-gift, .gift-promises, .gift-memories, .gift-msg {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #2a2929;
+    background-color: #e6dac8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #b59f8c;
+    transition: background-color 0.3s ease, transform 0.15s ease;
+}
+.gift-gift:hover, .gift-promises:hover, .gift-memories:hover, .gift-msg:hover {
+    background-color: #d4c1a3;
+    transform: scale(1.05);
+}
+.gift-gift:active, .gift-promises:active, .gift-memories:active, .gift-msg:active {
+    background-color: #c9b18a;
+    transform: scale(0.95);
+}
+.some-line, .back-to-main {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #2a2929;
+    background-color: #e6dac8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #b59f8c;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    justify-content: center;
+    align-items: center;
+}
+.some-line { display: flex; margin-top: 0; }
+.back-to-main { display: inline-block; margin: 1rem 0; }
+.some-line:hover, .back-to-main:hover {
+    background-color: #d4c1a3;
+    transform: scale(1.05);
+}
+.like { display: flex; flex-wrap: wrap; text-align: center; margin-top: 0; font-size: 1.5rem; }
+.telling, .warning, .some-lines, .promises { font-size: 1.2rem; margin-top: 0; }
+.g { font-size: 1.5rem; margin-top: 0; }
+.msg { font-size: 1.5rem; margin-top: 0; font-family: "Pacifico", cursive; font-weight: bold; }
+.pointing { font-family: "Pacifico", cursive; font-size: larger; font-weight: bolder; }
+.img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin: 1.25rem auto;
+    max-width: 100%;
+}
+.img img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #b59f8c;
+}
+.img img:nth-child(odd)  { transform: rotate(-3deg); }
+.img img:nth-child(even) { transform: rotate(3deg); }
+.heart1, .heart2, .heart3 { display: none; }
+.collage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 2.5;
+    margin: 1.25rem 0 2rem;
+}
+.collage figure {
+    position: absolute;
+    width: 56%;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.collage img { width: 100%; object-fit: cover; border-radius: 10px; box-shadow: 0 0 20px #9a7d57; }
+.collage figcaption { margin-top: 4px; }
+
+.c1 { left: -8%;  top: -12.5%; }
+.c2 { right: -8%; top: -7.5%; }
+.c3 { left: -8%;  top: 17.5%; }
+.c4 { right: 45%; top: 40.5%; }
+.c5 { left: 45%;  top: 45.5%; }
+.c6 { right: 30%; top: 69.5%; }
+.memories-page .back-to-main {
+    position: relative;
+    top: 2rem;
+    left: 0;
+}
